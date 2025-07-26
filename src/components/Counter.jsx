@@ -11,7 +11,7 @@ const Counter = () => {
     <div className="flex flex-col gap-8 lg:flex-row lg:gap-16 items-center justify-center min-h-[80vh] bg-gray-50 transition-colors duration-500 font-sans px-4 py-8">
       <CounterApp setHistory={setHistory} />
       <div className="hidden lg:flex h-100 w-0.5 bg-gray-900 rounded-full shadow-lg" />
-      <div className="flex flex-col w-90 sm:w-100">
+      <div className="flex flex-col w-80 sm:w-100">
         <h2 className="text-lg font-bold text-gray-900 text-center">
           History
         </h2>
