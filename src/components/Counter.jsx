@@ -18,7 +18,7 @@ const Counter = () => {
         {history.length !== 0 ? (
           <History history={history} setHistory={setHistory} />
         ) : (
-          <p className="mt-5 w-full max-w-lg bg-white rounded-xl shadow-lg border-2 border-gray-900 p-4 font-sans flex items-center justify-center text-lg text-gray-700 font-semibold h-100 ">
+          <p className="mt-5 max-w-lg bg-white rounded-xl shadow-lg border-2 border-gray-900 p-4 font-sans flex items-center justify-center text-lg text-gray-700 font-semibold h-100 ">
             No history yet!
           </p>
         )}
