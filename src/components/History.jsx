@@ -25,9 +25,8 @@ const History = (props) => {
   return (
     <>
      
-      <div className="w-full max-w-lg bg-white rounded-xl shadow-lg border-2 border-gray-900 p-4 font-sans h-100 overflow-auto scroll-auto">
-        <ul>{historyList}</ul>
-      </div>
+      
+        <ul className="w-full sm:w-100 mt-2">{historyList}</ul>
     </>
   );
 };

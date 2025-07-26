@@ -11,17 +11,19 @@ const Counter = () => {
     <div className="flex flex-col gap-8 lg:flex-row lg:gap-16 items-center justify-center min-h-[80vh] bg-gray-50 transition-colors duration-500 font-sans px-4 py-8">
       <CounterApp setHistory={setHistory} />
       <div className="hidden lg:flex h-100 w-0.5 bg-gray-900 rounded-full shadow-lg" />
-      <div className="flex flex-col w-70 sm:w-100">
-        <h2 className="text-lg font-bold text-gray-900 text-center">
+      <div className="flex flex-col w-full items-center bg-white max-w-md rounded-xl shadow-lg border-2 border-gray-900 font-sans h-[400px] px-0 relative justify-start" >
+        <h2 className="w-full m-0 p-4 text-lg font-bold rounded-t-xl shadow-lg border-yellow-500 border-2 bg-gray-900 text-yellow-500 text-center">
           History
         </h2>
-        {history.length !== 0 ? (
-          <History history={history} setHistory={setHistory} />
-        ) : (
-          <p className="mt-5 max-w-lg bg-white rounded-xl shadow-lg border-2 border-gray-900 p-4 font-sans flex items-center justify-center text-lg text-gray-700 font-semibold h-100 ">
-            No history yet!
-          </p>
-        )}
+        <div className=" flex flex-col items-center overflow-auto scroll-auto">
+          {history.length !== 0 ? (
+            <History history={history} setHistory={setHistory} />
+          ) : (
+            <p className="mt-5">
+              No history yet!
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );
